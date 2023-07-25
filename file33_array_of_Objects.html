@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays of Objects</title>
+</head>
+<script>
+    // arr is basically array of objects.
+    var arr= [
+        {name:"Soumyadeep",age:23}, //object_1.
+        {name:"Rahul",age:21}, //object_2.
+        {name:"Karan",age:26} //obejct_3
+    ]
+    // document.write(arr); // we cannot directly print the value of the array in the web page.
+    console.log(arr); //we can print it in the console .
+    document.write(arr[0].name); //printing  the value of name of object present in array at index 0.
+    document.write("<br>");
+    // the loop will help to print all the object's property.
+    for(var a=0;a<arr.length;a++)
+    {
+        document.write(arr[a].name +"-" +arr[a].age + "<br>");
+    }
+
+</script>
+<body>
+    
+</body>
+</html>

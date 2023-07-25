@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Variable_with Array and Objects</title>
+</head>
+<script>
+    // when we declare a constant array or an object we cannot modify or change its value as whole object or an array, we can modify it element by element in the array or property by property in objects.
+     const a={
+        name:"SOUMYADEEP",
+        lname:"DANDPAT",
+        Age:23
+     };
+    // a={                // we are trying too change the whole object directly and this will give error in the console.
+    //     name:"Annie",
+    //     lname:"James",
+    //     Age:23
+    //  };
+
+    a.name= "Annie"; // in this we can change the constant value.
+    a.lname= "James";
+    a.Age= 23;
+    document.write("<br>");
+    document.write(a.name); 
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_2</title>
+</head>
+<script>
+    var arr= new Array(); // another way of declaring an array.
+    // we can aslo initialise the array by var arr= new Array(20,"Hello",true);
+    let ind=prompt("Enter the number of elements");
+    for(var i=0; i<ind;i++)
+    {
+        arr[i]= prompt("Enter the element");
+    } 
+    document.write("<ul>");
+    for(var i=0;i<ind;i++)
+    {
+        document.write("<li>"+ arr[i] +"</li>");
+    }
+    document.write("</ul>");
+</script>
+<body>
+    
+</body>
+</html>

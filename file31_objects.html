@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Objects</title>
+</head>
+<script>
+    // when curly braces are used after declaring the then we can identify it as the objects
+    var a= {
+        fname: "Soumyadeep", // fname is the properties of the object a
+        lname: "Dandapat",
+        age: 23,
+        email: "soumyadeepdandapat@gmail.com" ,
+         // we can also keep the method in the objects,i.e here m is a method and after : it is defined.
+        favmovies: ["Major","lakshay","Uri:The surgical strike"],
+        m: function(){
+            var a ="This is a function";
+            return a;
+         },
+       fullname: function()   // fullname is a method.
+            {
+                return (this.fname + " " + this.lname); //this key word reperesent the name of the object within which its property is used. we Canot directly use the property without using the this keyword.
+            },
+        // We can also define object within the object.
+         b:{   //basically b is a property of object a only but its a objec also have soe property within it.
+                Role: "Software Development",
+                Skills:["Flutter","DSA","Python","HTML","CSS"]
+            }
+     }
+     document.write(a.m());
+     document.write("<br>");
+     document.write(a.fullname() + "<br>");
+     document.write(a.b.Skills[2]);
+    //  document.write(a.fname + a.lname);
+</script>
+<body>
+    
+</body>
+</html>

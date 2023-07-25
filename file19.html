@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript events</title>
+   <!-- within the script tag we can also write the javascript code -->
+   <script>
+      function hello()
+      {
+         document.write("Hello every one")
+      }
+      function heya()
+      {
+         alert("How are you")
+      }
+      function love()
+      {
+         alert("i love you")
+      }
+   </script>
+</head>
+<body onkeypress="hello()">
+   <button onclick="hello()">Click Here </button>
+   <p ondblclick="heya()">double click here</p> 
+   <!-- ondblclick means on double click -->
+   <button oncontextmenu="love()">Click me</button>
+   <!-- The oncontextmenu event is a JavaScript event that occurs when the user right-clicks on an HTML element. It can be used to execute a function or perform an action when the user right-clicks on an element. -->
+   <button onmouseenter="heya()">Click me</button>
+   <p onmouseout="love()">Hello Deep</p>
+   <!-- there are other events like mouseup and mousedown -->
+   <!-- <p onkeypress="love()">Click Me </p> -->
+   <!-- Onkeypress doesn't work in the paragraph part or button ta. this property work in body tag. -->
+   <!-- similary the onresize also work within the body tag. here the resize of the window triggers the function call.-->
+   <!-- similarly onscroll is also there which can be used in the paragraph tag and also the body tag. -->
+   <!-- on -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested_loop_2</title>
+</head>
+<script>
+    let a= prompt("Enter The number of rows");
+    // pattern-1
+    // for(var i=1; i<=a; i++)
+    // {
+    //     for(var b=1;b<i+1;b++)
+    //     {
+    //         document.write(b +" ");
+    //     }
+    //     document.write("<br>");
+    // }
+
+    // pattern-2
+
+        for(var i=1; i<=a;i++)
+        {   var c=i;
+            for(var b=0;b<i;b++)
+            {   
+                document.write(c +" ");
+                c=c+1;
+            }
+            document.write("<br>");
+        }
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<script>
+    var a= "SoumYadEEp";
+    // document.write(a.length); // length will give the length of the the string.
+    // document.write(a.toLowerCase(a));// it will convert all the characters to the lowercase.
+    // document.write(toUpperCase(a)); //it will convert all the characters to the upper case .
+    var b="A Quick brown fox Jump over the lazy dog";
+    // document.write(b.includes("Quick")); // includes() will return the value either true or false, depends on the searching string given. It is a case sensitive.
+    // b.startsWith("Qui")----> this will check is any string starts with Qui and return true ot false.
+    // same b.endsWith("mp")----->check if any words ends with the given string inout and return true or false.
+    // b.search("brown")--> it will return the position of the string/character given in the input. If not found it will return -1.
+    var c= "Hello the world have the greatest things"
+    // document.write(c.match(/the/g));
+    // it will return an array having all of 'the' present in the string, g represent globally.
+    // indeOf()-- samne sei charater ya string ko search karega,and return the index
+    // lastIndexOf()- piche sei character ya string ko search karega,and return the index.
+    document.write(c.replace("Hello","Hii"));
+    // replace()--> will simply replace "Hello" with "Hii"
+    document.write(c.replace(/the/g,"is"));
+    // this will replace all "the" in the string, else normally it will replace only the first ocuurence of 'the'.
+    // trim()- it will only trim or remove the extra space in front and end of the string.
+    //charAt(index) will give the character at the input index.
+    // charCodeAt(index)---> will give the the ascii value of the character at given index.
+    var a= String.fromCharCode(2);//it will return simply the character at the ascii value 2,and also it doesn't require any string to search in it.
+    // str1.concat(str2)--- to concatenate the strings.It will concatenate the string str1 and str 2.
+    //str.repeat(2)-->It will simply repeat the given string str for 2 times.
+    //slice()
+    // variable.toString()- will simply change the data type of any variable to string.
+    </script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_methods</title>
+</head>
+<script>
+    // we will use some of the array methods like:
+    // sort()-sort the array elemnts in numerical order or in alphabatical order.
+    // reverse- reverse the order of the elements.
+    // push("Hello")- it will add the element Hello in the from the end 
+    // pop("Hello")- it will pop the element Hello from the end of the array;
+    // shift("Hello")- It will delete the element Hello form the front.
+    // unshift("Hello")- it will add the element form the front of the array.
+    var arr1= ["SOUMYADEEP","ANURAG"];
+    var arr2=["YOGESH","SOMEN","AKASH"];
+    var c= arr1.concat(arr2);  // concat() will simply concatenate the array with another array and thus they will create a new array.
+    document.write(c);
+    arr3=["GOVIND","JAY","NISHIT"];
+    var c= arr1.concat(arr2,arr3);  //cocatenate arr2 and arr3 with arr1.
+    document.write(c);
+    var arr4=["HELLO","WORLD", "IS","BEAUTIFUL"];
+    var m= arr4.join(); //It will basically join all the elements in the into a single string.
+    document.write(m);
+    // slice(a,b)- slice will be done from the [a,b) ,i.e include a to element before b.
+    // splice(index,how many elemnts should be deleted,elemets to be added)
+    var a=["Sanjay","Aman","Rehman","Rahul"];
+    a.splice(2,1,"Neha","Karan"); // this will delete one element that is Rehman from second place and then put the neha and karan from index 2.
+
+    var Array=["Sanjay","Aman","Rehman","Aman"];
+    let res = Array.isArray(Array); // Array.isArray will give either true(if parameter is array), or it will give false.
+    
+    var b= Array.indexOf("Aman",0); // output: 1
+    // the indexOf function will give us the index of the first occurence of string or element in the array. In pameter we can write both string and the position from which searching would start or we can simply write the string it would give the index of first ocurence.
+    // if any unknown string is passed in the function then it will give -1 output.
+    // var b= Array.LastIndexof("Aman",2);---> This will start searching from the end of the array to the front according to the index given in the parmeter.
+
+    // if we want to check weather the string or the elemennt present in the array we use include(String or elemnt we want to search).It returns true or false value.
+    // var c= Array.includes("Sanjay") --->this will give true.
+    // it has case sensitive nature.
+
+    // some() and every function.
+    // some()- if any of the value matches the condition it will give give true.
+    // every()- it will check all the value of the array till end of the array untill all of them satisfy the condition.
+    var z= [12,13,54,18]; // it will check only one number which satisfy condition & return true. 
+    var b= z.some(checkAdult);
+    document.write(b + "<br>");
+    function checkAdult(age)
+    {
+        return age>=18;
+    }
+    var y= [12,23,41,19]; // this will give flase to every() function as 12 is not greater than 18.
+    var b= y.some(checkAdult);
+    document.write(b + "<br>");
+    function checkAdult(age)
+    {
+        return age>=18;
+    }
+
+    // filter() function will basically return us array where every element in the array satisfy a paticular conditon.
+    var y= [12,23,41,19]; 
+    var b= y.filter(checkAdult);
+    document.write(b + "<br>"); // this will print 23,41,19, because they are greater than 18.
+    function checkAdult(age)
+    {
+        return age>=18;
+    }
+
+    // toString() and join() both converts the elements of the array into a single string.
+    
+    // forEach loop in the array.
+    // It is a function to iterate over all the elemnts of the array.
+    var ar=["Aman","Karn","Arjun","Rahul"];
+    ar.forEach(loop);
+    function loop(value)
+    {
+        document.write(value + "<br>");
+    }
+    // we ca also print the index too.
+    function loop(value, index)
+    {
+        document.write(index + ":" + value + "<br>");
+    }
+    document.write(a);
+</script>
+<body>
+    
+</body>
+</html>

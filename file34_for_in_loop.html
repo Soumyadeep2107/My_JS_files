@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in loop in Java Script</title>
+</head>
+<script>
+    // we know differet types of loops which are basically help to print the elements of te array(for,foreach,while,do-While).
+    // to Print the object we use for-in loop ,which will help to print the properties or key of the object directly.
+    var obj={
+        fName: "Soumyadeep",
+        lName:"Dandapat",
+        age: 23,
+        Email: "soumyadeepdandapat@gmail.com"
+    };
+    for(key in obj)   // key is basically the property and obj[key]- will give the value of that key of the object.Loop will iterate for whole object.
+    {
+        document.write(key+":"+obj[key] + "<br>");
+    }
+</script>
+<body>
+    
+</body>
+</html>

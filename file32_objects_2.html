@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Java Script objects Part-2</title>
+</head>
+<script>
+    var a =new Object();
+    // we can declare objects in this way also. We can now define any property of the objectat any time.
+    a.firstname ="Soumyadeep"; // here firstname, lastname ,age all are properties of the object a.
+    a.lastname= "Dandapat";
+    a.age= 25;
+    // document.write(a); // this print the object object.
+    document.write(a.firstname);
+    document.write("<br>"+ a.lastname);
+    function hello(b){
+        document.write("<br>");
+        document.write(b);
+    }
+    a.func=hello("Hello World"); 
+    document.write("<br>");
+    a.m=function(){   // m is a method and can be called as a.m().
+        return this.age;
+    }
+    document.write(a.m()); // to invoke the function , we need to call the method m().
+</script>
+<body>
+    
+</body>
+</html>
